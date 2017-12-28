@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
 	
 /* BACKGROUND SLIDESHOW */
 	$('#overlay').backstretch([
-	                     "css/images/1.jpg"
+	                     "https://mcarballeira.github.io/css/images/1.jpg"
 	                   , "images/2.jpg"
 	                   , "images/3.jpg"
 	                  ], {duration: 3000, fade: 750});
