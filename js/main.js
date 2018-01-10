@@ -1,21 +1,10 @@
 
-jQuery(document).ready(function() {	
-	
-/* BACKGROUND SLIDESHOW */
-	$('#overlay').backstretch([
-	                     "https://mcarballeira.github.io/css/images/1.jpg"
-	                   , "images/2.jpg"
-	                   , "images/3.jpg"
-	                  ], {duration: 3000, fade: 750});
-					  
-    
-  
 
-});
+	
 
 /* COUNTDOWN */
 // Set the date we're counting down to
-var goalDate = new Date("Jan 1, 2020 00:00:00").getTime();
+var goalDate = new Date("Jan 1, 2019 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -33,7 +22,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element
-    document.getElementById("days").innerHTML = "<h2>"+days+"</h2>" + " days "
+    document.getElementById("days").innerHTML = "<h2>"+days+"</h2>" + " days "        
     document.getElementById("hours").innerHTML = "<h2>"+hours+"</h2>" + " hours "
     document.getElementById("minutes").innerHTML = "<h2>"+minutes+"</h2>" + " minutes "
     document.getElementById("seconds").innerHTML = "<h2>"+seconds+"</h2>" + " seconds "
@@ -41,6 +30,8 @@ var x = setInterval(function() {
 
     // If the count down is finished, write some text
     if (distance < 0) {
-	    document.getElementById("countdown").innerHTML = "Countdown date expired. <br> Please, send me a message to remember me to change it. <br> Thank you!";
+	   document.getElementById("countdown").innerHTML = "Countdown date expired. <br> Please, send me a message to remember me to change it. <br> Thank you!";
     }
+
 }, 1000);
+
